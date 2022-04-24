@@ -1,24 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import FormTask from "./components/FormTask";
+import HeaderTask from "./components/HeaderTask";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="h-[90vh] w-full flex flex-col items-center justify-between py-10">
+      <h1 className="text-4xl text-center">My todolist</h1>
+      <FormTask />
+      <div>
+        <HeaderTask />
+      </div>
     </div>
   );
 }
